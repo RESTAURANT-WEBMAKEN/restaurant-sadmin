@@ -16,14 +16,14 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Shubham Raj',
-            'email' => 'shubhambth0000@gmail.com',
-            'password' => 'Shubham@123',
+            'name' => 'Webmaken',
+            'email' => 'webmaken1@gmail.com',
+            'password' => 'Webmaken@123',
         ]);
 
-        $this->call(RestaurantSeeder::class);
-        $this->call(RestaurantFTPDetailsSeeder::class);
-        $this->call(RestaurantSSHDetailsSeeder::class);
-        $this->call(RestaurantDatatbaseDetailsSeeder::class);
+        // $this->call(RestaurantSeeder::class);
+        // $this->call(RestaurantFTPDetailsSeeder::class);
+        // $this->call(RestaurantSSHDetailsSeeder::class);
+        // $this->call(RestaurantDatatbaseDetailsSeeder::class);
     }
 }
