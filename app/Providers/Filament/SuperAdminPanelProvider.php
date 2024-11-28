@@ -36,7 +36,7 @@ class SuperAdminPanelProvider extends PanelProvider
             ->brandLogoHeight('2rem')
 
             ->login()
-            ->registration()
+            ->registration(false)
             ->passwordReset()
             ->emailVerification()
             ->profile()
