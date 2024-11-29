@@ -656,10 +656,12 @@ class SystemCheck extends Page implements HasForms, HasInfolists, HasTable
         // Render the Blade view
         $envContent = view('installation.env', compact('restaurant'))->render();
 
+        $childRepo = config('app.child_repo');
+
         // Construct the command to run
         $command = "
             rm -rf ./* .[^.]* && \
-            git clone https://github.com/shubhamrajprajapati/restaurant-child.git . && \
+            git clone $childRepo . && \
             echo '$envContent' > .env && \
             composer install --no-interaction && \
             php artisan key:generate --force >> installation-output.txt 2>&1 && \

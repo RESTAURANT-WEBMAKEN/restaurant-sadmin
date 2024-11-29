@@ -54,6 +54,8 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'child_repo' => env('CHILD_REPO', 'https://github.com/RESTAURANT-WEBMAKEN/restaurant-child.git'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
